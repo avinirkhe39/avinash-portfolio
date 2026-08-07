@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Avinash Nirkhe - Backend Engineer Portfolio showcasing Python, Django, and PostgreSQL skills">
+    <meta name="keywords" content="backend engineer, python, django, postgresql, web development">
+    <meta name="author" content="Avinash Nirkhe">
+    <title>Avinash Nirkhe | Backend Engineer</title>
+    <style>
+        :root {
+            --primary-blue: #007bff;
+            --dark-bg: #1a1a1a;
+            --light-bg: #ffffff;
+            --text-dark: #ffffff;
+            --text-light: #333333;
+            --gray: #666666;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background: var(--light-bg);
+            color: var(--text-light);
+            line-height: 1.6;
+            transition: all 0.3s ease;
+        }
+
+        body.dark-mode {
+            background: var(--dark-bg);
+            color: var(--text-dark);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        nav {
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        nav.dark-mode {
+            background: rgba(26, 26, 26, 0.95);
+        }
+
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-links a {
+            margin-left: 30px;
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-blue);
+        }
+
+        .theme-toggle {
+            cursor: pointer;
+            padding: 8px;
+        }
+
+        section {
+            padding: 80px 0;
+            scroll-margin-top: 80px;
+        }
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            animation: fadeIn 1s ease;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: var(--primary-blue);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .project-card {
+            background: #f5f5f5;
+            padding: 20px;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        body.dark-mode .project-card {
+            background: #2d2d2d;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .skill-item {
+            background: #e9ecef;
+            padding: 8px 15px;
+            border-radius: 20px;
+        }
+
+        body.dark-mode .skill-item {
+            background: #404040;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .nav-links { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container nav-content">
+            <h2>Avinash Nirkhe</h2>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+                <span class="theme-toggle">🌙</span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Hi, I'm Avinash Nirkhe</h1>
+            <p>Backend Engineer specializing in Python and Django</p>
+            <a href="#projects" class="btn">View Projects</a>
+        </div>
+    </section>
+
+    <section id="about" class="container">
+        <h2>About Me</h2>
+        <p>I'm a passionate Backend Engineer with a BE in Electronics and Telecommunication. I specialize in building robust and scalable web applications using Python, Django, and PostgreSQL. With a strong foundation in software architecture and database design, I create efficient backend systems that power modern web applications.</p>
+    </section>
+
+    <section id="projects" class="container">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>E-commerce Backend</h3>
+                <p>A scalable Django-based backend with REST API for an e-commerce platform.</p>
+                <a href="#">GitHub</a> | <a href="#">Live Demo</a>
+            </div>
+            <div class="project-card">
+                <h3>Task Management API</h3>
+                <p>RESTful API built with Django and PostgreSQL for task management.</p>
+                <a href="#">GitHub</a> | <a href="#">Live Demo</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="container">
+        <h2>Skills</h2>
+        <div class="skills-list">
+            <span class="skill-item">Python</span>
+            <span class="skill-item">Django</span>
+            <span class="skill-item">PostgreSQL</span>
+            <span class="skill-item">REST API</span>
+            <span class="skill-item">Git</span>
+            <span class="skill-item">Heroku</span>
+            <span class="skill-item">Docker</span>
+            <span class="skill-item">Linux</span>
+        </div>
+    </section>
+
+    <section id="resume" class="container">
+        <h2>Resume</h2>
+        <a href="#" class="btn">Download Resume</a>
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Contact Me</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Message" rows="5" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+        <div class="social-links">
+            <a href="#">LinkedIn</a> | <a href="#">GitHub</a>
+        </div>
+    </section>
+
+    <script>
+        // Theme toggle
+        const themeToggle = document.querySelector('.theme-toggle');
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            themeToggle.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Form submission (placeholder)
+        document.querySelector('.contact-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Message sent successfully!');
+        });
+    </script>
+</body>
+</html>
