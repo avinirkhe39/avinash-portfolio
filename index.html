@@ -289,55 +289,81 @@
     <!-- Contact Section -->
     <section id="contact" class="container">
 
-        <h2>Contact Me</h2>
+    <h2>Contact Me</h2>
 
-        <form class="contact-form">
+    <p>
+        Have a question, project opportunity, or want to connect?
+        Feel free to get in touch with me.
+    </p>
 
-            <input
-                type="text"
-                placeholder="Name"
-                required
-            >
+    <form
+        class="contact-form"
+        action="https://formsubmit.co/avinirkhe3999@gmail.com"
+        method="POST"
+    >
 
-            <input
-                type="email"
-                placeholder="Email"
-                required
-            >
+        <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            required
+        >
 
-            <textarea
-                placeholder="Message"
-                rows="5"
-                required
-            ></textarea>
+        <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            required
+        >
 
-            <button
-                type="submit"
-                class="btn"
-            >
-                Send Message
-            </button>
+        <textarea
+            name="message"
+            placeholder="Your Message"
+            rows="5"
+            required
+        ></textarea>
 
-        </form>
+        <input
+            type="hidden"
+            name="_subject"
+            value="New Portfolio Contact Message"
+        >
 
+        <input
+            type="hidden"
+            name="_captcha"
+            value="false"
+        >
 
-        <div class="social-links">
+        <button type="submit" class="btn">
+            Send Message
+        </button>
 
-            <a href="www.linkedin.com/in/avinash-nirkhe-858a3b217
+    </form>
 
-" target="_blank" rel="noopener noreferrer">
-                LinkedIn
-            </a>
+    <div class="social-links">
 
-            |
+        <a
+            href="https://www.linkedin.com/in/avinash-nirkhe-858a3b217/"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            LinkedIn
+        </a>
 
-            <a href="avinirkhe39" target="_blank" rel="noopener noreferrer">
-                GitHub
-            </a>
+        |
 
-        </div>
+        <a
+            href="https://github.com/avinirkhe39"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            GitHub
+        </a>
 
-    </section>
+    </div>
+
+</section>
 
 
     <!-- JavaScript -->
