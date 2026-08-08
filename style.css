@@ -479,3 +479,12 @@ body.dark-mode textarea {
     margin-bottom: 25px;
     box-shadow: 0 10px 30px rgba(0, 168, 255, 0.25);
 }
+
+@media (max-width: 768px) {
+
+    .profile-photo {
+        width: 120px;
+        height: 120px;
+    }
+
+}
