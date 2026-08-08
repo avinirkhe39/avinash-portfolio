@@ -68,15 +68,12 @@ const contactForm = document.querySelector(".contact-form");
 
 if (contactForm) {
 
-    contactForm.addEventListener("submit", function (e) {
+    contactForm.addEventListener("submit", function () {
 
-        e.preventDefault();
+        const button = contactForm.querySelector("button");
 
-        alert(
-            "Thank you for contacting me! I will get back to you soon."
-        );
-
-        contactForm.reset();
+        button.textContent = "Sending...";
+        button.disabled = true;
 
     });
 
