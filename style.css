@@ -467,3 +467,15 @@ body.dark-mode textarea {
         padding: 0 18px;
     }
 }
+
+/* Profile Photo */
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid var(--primary);
+    margin-bottom: 25px;
+    box-shadow: 0 10px 30px rgba(0, 168, 255, 0.25);
+}
